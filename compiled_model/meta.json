@@ -4,5 +4,5 @@
     "kernel": [
         "subgraph_Net__Net_Conv2d_conv1__20"
     ],
-    "target": "DPUCZDX8G_ISA0_B3136_MAX_BG2"
+    "target": "DPUCZDX8G_ISA0_B4096_MAX_BG2"
 }

@@ -40,11 +40,17 @@ elif [ $1 = u50 ]; then
       echo "-----------------------------------------"
       echo "COMPILING MODEL FOR ALVEO U50.."
       echo "-----------------------------------------"
-elif [ $1 = kv260 ]; then
+elif [ $1 = kv260_petalinux ]; then
       ARCH=./code/arch.json
       TARGET=kv260
       echo "-----------------------------------------"
-      echo "COMPILING MODEL FOR KV260.."
+      echo "COMPILING MODEL FOR KV260 (PETALINUX).."
+      echo "-----------------------------------------"
+elif [ $1 = kv260_ubuntu20 ]; then
+      ARCH=./code/arch2.json
+      TARGET=kv260
+      echo "-----------------------------------------"
+      echo "COMPILING MODEL FOR KV260 (UBUNTU20).."
       echo "-----------------------------------------"
 else
       echo  "Target not found. Valid choices are: zcu102, zcu104, vck190, u50 ..exiting"

@@ -62,7 +62,7 @@ LOG=$3
 
 compile() {
   vai_c_xir \
-  --xmodel      ${BUILD}/quant/Net_int.xmodel \
+  --xmodel      ${BUILD}/quant/ResNet_int.xmodel \
   --arch        $ARCH \
   --net_name    CNN_${TARGET} \
   --output_dir  ${BUILD}/compiled_model
